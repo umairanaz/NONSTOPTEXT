@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Stop Text Scrolling with Pause</title>
+    <style>
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .scroll-content {
+            display:flex;
+            animation: scrollAnimation 10s linear infinite;
+        }
+
+        .scroll-content h1 {
+            margin: 0 50px;
+            font-size: 2em;
+        }
+
+        @keyframes scrollAnimation {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="scroll-container">
+    <div class="scroll-content" id="scrollContent">
+        <h1>HELLO</h1>
+        <h1>GOLF</h1>
+        <h1>LESSON</h1>
+        <h1>HELLO</h1>
+        <h1>GOLF</h1>
+        <h1>LESSON</h1>
+        <h1>HELLO</h1>
+        <h1>GOLF</h1>
+        <h1>LESSON</h1>
+        <h1>HELLO</h1>
+        <h1>GOLF</h1>
+        <h1>LESSON</h1>
+    </div>
+</div>
+
+
+
+</body>
+</html>
